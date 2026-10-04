@@ -1,5 +1,5 @@
-# Ahnaf's multipage portfolio
+# Ahnaf's portfolio
 
-Upload all HTML files, styles.css, site.js, and the assets folder to the root of your GitHub Pages repository. Keep the folder structure. GitHub Pages will open index.html automatically.
+Upload all the HTML files to the root of your GitHub Pages repository. The images, CSS, and JavaScript are inside each HTML file, so no assets folder is needed.
 
-Home uses the centered landing layout. The content pages retain the colors, fonts, photos, themes, and styling from the attached index.html.
+index.html is the home page. Each section has its own page.
