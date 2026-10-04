@@ -1,0 +1,114 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Projects | Ahnaf Hawlader</title><meta name="description" content="Prototyping, design, and experiments.">
+<script>
+document.documentElement.classList.add('js-enabled');
+try {
+  var savedTheme = localStorage.getItem('ahnaf-theme');
+  var allowedThemes = ['sakura', 'cyberpunk', 'western', 'moonlit'];
+  document.documentElement.setAttribute('data-theme', allowedThemes.indexOf(savedTheme) !== -1 ? savedTheme : 'sakura');
+} catch (e) {
+  document.documentElement.setAttribute('data-theme', 'sakura');
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=Nunito:wght@400;500;600;700;800&amp;family=Orbitron:wght@500;600;700&amp;family=Playfair+Display:wght@400;600;700&amp;family=Rye&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"><script src="site.js" defer></script></head><body><header class="nav page-nav">
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="nav-inner"><a class="site-brand" href="index.html">Ahnaf Hawlader</a>
+    <div class="nav-right">
+      <details class="mobile-menu">
+        <summary>Menu</summary>
+        <nav aria-label="Mobile navigation">
+          <a href="about.html#about">About</a><a href="materials.html#materials">Materials</a>
+          <a href="life.html#interests">Interests</a><a href="experience.html#experience">Experience</a>
+          <a href="projects.html#projects">Projects</a><a href="about.html#skills">Skills</a>
+          <a href="about.html#education">Education</a><a href="materials.html#idea-lab">Idea Lab</a>
+          <a href="life.html#play">Play</a><a href="about.html#contact">Contact</a>
+        </nav>
+      </details>
+      <ul class="nav-links">
+        <li><a href="about.html#about">About</a></li>
+        <li><a href="materials.html#materials">Materials</a></li>
+        <li><a href="life.html#interests">Interests</a></li>
+        <li><a href="experience.html#experience">Experience</a></li>
+        <li><a href="projects.html#projects">Projects</a></li>
+        <li><a href="life.html#play">Play</a></li>
+        <li><a href="about.html#contact">Contact</a></li>
+      </ul>
+      <div class="theme-picker" role="group" aria-label="Choose a theme">
+        <button class="swatch" data-theme="sakura" style="--sw-bg:#FFF8FB;--sw1:#FFC2DA;--sw2:#E9B3D3" type="button" aria-label="Sakura theme" title="Sakura">🌸</button>
+        <button class="swatch" data-theme="cyberpunk" style="--sw-bg:#090B1C;--sw1:#31E7F5;--sw2:#FF4CB4" type="button" aria-label="Cyberpunk theme" title="Cyberpunk">⚡</button>
+        <button class="swatch" data-theme="western" style="--sw-bg:#FFF4DE;--sw1:#F7C66F;--sw2:#DB7952" type="button" aria-label="Western Hero theme" title="Western Hero">⭐</button>
+        <button class="swatch" data-theme="moonlit" style="--sw-bg:#21162C;--sw1:#FFC3DF;--sw2:#B798D8" type="button" aria-label="Moonlit Sakura theme" title="Moonlit Sakura">🌙</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">  <section id="projects" class="section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Making ideas real</span>
+        <h2>What curiosity looks like in action</h2>
+        <p>I like the moment when a team turns a question into something we can test, improve, and share.</p>
+      </div>
+      <div class="project-list">
+
+        <div class="project-card">
+          <div class="project-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2v6M12 16v6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M2 12h6M16 12h6M4.9 19.1l4.2-4.2M14.9 9.1l4.2-4.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Biomedical Toolkit</h3>
+          <span class="project-meta">Engineers Without Borders, University of Toronto · Sept 2025 – Apr 2026</span>
+          <p>Helped research, design, prototype, and test a modular physical toolkit for biomedical education, from concept through 3D-printed components and technical documentation.</p>
+          <div class="tag-row">
+            <span class="tag">Tinkercad</span>
+            <span class="tag">3D printing</span>
+            <span class="tag">Prototyping</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M7 20h10M9 16l2.5-4 2 2.5L17 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>AI Multimodal Workstation</h3>
+          <span class="project-meta">University of Toronto · Team lead · Jan – Apr 2025</span>
+          <p>Led a team of six to design an AI-enabled multimodal workstation through to a working prototype. I assigned tasks based on team strengths, tracked deadlines with a Gantt chart, and conducted primary research to define the design goals.</p>
+          <div class="tag-row">
+            <span class="tag">Team leadership</span>
+            <span class="tag">Gantt charts</span>
+            <span class="tag">Prototyping</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 3h6M10 3v5l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M7.5 15h9" stroke="currentColor" stroke-width="1.6"/></svg>
+          </div>
+          <h3>Reactions Division</h3>
+          <span class="project-meta">University of Toronto Chemical Vehicles · Sept – Oct 2025</span>
+          <p>Studied reaction kinetics and concentration effects to select chemical reactions for a competition car's stopping mechanism, then ran lab experiments to hit competition-ready stopping times.</p>
+          <div class="tag-row">
+            <span class="tag">Reaction kinetics</span>
+            <span class="tag">Lab testing</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section></main><dialog class="photo-dialog" id="photoDialog" aria-label="Enlarged campus photo">
+  <button class="photo-close" id="photoClose" type="button" aria-label="Close photo">Close ✕</button>
+  <img id="photoDialogImage" alt="">
+  <p id="photoDialogCaption"></p>
+</dialog>
+<button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" title="Back to top"><span>↑</span></button>
+
+<footer>
+  Ahnaf Hawlader · Toronto, Ontario <button class="secret-button" id="secretButton" type="button" aria-label="Reveal a secret" aria-expanded="false" aria-controls="secretMessage">✦</button>
+  <span class="secret-message" id="secretMessage" hidden>Avram was here! Official little-brother quality control 🏀✨</span>
+</footer>
+
+</body></html>

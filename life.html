@@ -1,0 +1,128 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Beyond Engineering | Ahnaf Hawlader</title><meta name="description" content="Music, basketball, Pokémon, campus moments, and a game.">
+<script>
+document.documentElement.classList.add('js-enabled');
+try {
+  var savedTheme = localStorage.getItem('ahnaf-theme');
+  var allowedThemes = ['sakura', 'cyberpunk', 'western', 'moonlit'];
+  document.documentElement.setAttribute('data-theme', allowedThemes.indexOf(savedTheme) !== -1 ? savedTheme : 'sakura');
+} catch (e) {
+  document.documentElement.setAttribute('data-theme', 'sakura');
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=Nunito:wght@400;500;600;700;800&amp;family=Orbitron:wght@500;600;700&amp;family=Playfair+Display:wght@400;600;700&amp;family=Rye&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"><script src="site.js" defer></script></head><body><header class="nav page-nav">
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="nav-inner"><a class="site-brand" href="index.html">Ahnaf Hawlader</a>
+    <div class="nav-right">
+      <details class="mobile-menu">
+        <summary>Menu</summary>
+        <nav aria-label="Mobile navigation">
+          <a href="about.html#about">About</a><a href="materials.html#materials">Materials</a>
+          <a href="life.html#interests">Interests</a><a href="experience.html#experience">Experience</a>
+          <a href="projects.html#projects">Projects</a><a href="about.html#skills">Skills</a>
+          <a href="about.html#education">Education</a><a href="materials.html#idea-lab">Idea Lab</a>
+          <a href="life.html#play">Play</a><a href="about.html#contact">Contact</a>
+        </nav>
+      </details>
+      <ul class="nav-links">
+        <li><a href="about.html#about">About</a></li>
+        <li><a href="materials.html#materials">Materials</a></li>
+        <li><a href="life.html#interests">Interests</a></li>
+        <li><a href="experience.html#experience">Experience</a></li>
+        <li><a href="projects.html#projects">Projects</a></li>
+        <li><a href="life.html#play">Play</a></li>
+        <li><a href="about.html#contact">Contact</a></li>
+      </ul>
+      <div class="theme-picker" role="group" aria-label="Choose a theme">
+        <button class="swatch" data-theme="sakura" style="--sw-bg:#FFF8FB;--sw1:#FFC2DA;--sw2:#E9B3D3" type="button" aria-label="Sakura theme" title="Sakura">🌸</button>
+        <button class="swatch" data-theme="cyberpunk" style="--sw-bg:#090B1C;--sw1:#31E7F5;--sw2:#FF4CB4" type="button" aria-label="Cyberpunk theme" title="Cyberpunk">⚡</button>
+        <button class="swatch" data-theme="western" style="--sw-bg:#FFF4DE;--sw1:#F7C66F;--sw2:#DB7952" type="button" aria-label="Western Hero theme" title="Western Hero">⭐</button>
+        <button class="swatch" data-theme="moonlit" style="--sw-bg:#21162C;--sw1:#FFC3DF;--sw2:#B798D8" type="button" aria-label="Moonlit Sakura theme" title="Moonlit Sakura">🌙</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">  <section id="interests" class="section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">The things I love</span>
+        <h2>Things that feel like me</h2>
+        <p>These interests are part of my everyday life, and they shape how I think and connect with people.</p>
+      </div>
+      <div class="interest-grid">
+        <article class="interest-card">
+          <span class="interest-icon" aria-hidden="true">🎵</span>
+          <h3>Music</h3>
+          <p>I love finding the right song for a moment and sharing music with people close to me. A good playlist can make an ordinary day feel like a memory.</p>
+        </article>
+        <article class="interest-card">
+          <span class="interest-icon" aria-hidden="true">🏀</span>
+          <h3>Basketball</h3>
+          <p>I love playing, following the game, and leading my team. Basketball pushes me to think quickly, trust other people, and keep showing up when things get tough.</p>
+        </article>
+        <article class="interest-card">
+          <span class="interest-icon" aria-hidden="true">⚡</span>
+          <h3>Pokémon</h3>
+          <p>I can happily spend ages planning a team, trying a new strategy, or revisiting a favourite game. Pokémon brings out my playful, curious side.</p>
+        </article>
+      </div>
+      <div class="curiosity-corner">
+        <button class="sparkle-button" id="curiosityButton" type="button">✨ Give me a little inspiration</button>
+        <p class="curiosity-note" id="curiosityNote" role="status" aria-live="polite">A small thought for your visit.</p>
+      </div>
+      <div class="photo-story">
+        <h3>Little moments along the way</h3>
+        <p>Some snapshots from the people and places that make this chapter of life mine.</p>
+        <div class="photo-gallery">
+          <figure class="gallery-shot wide">
+            <button class="gallery-open" type="button" aria-label="Enlarge photo: Engineering spirit">
+            <img src="assets/engineering-spirit.jpg" alt="Ahnaf outdoors in a Skule cap and sweatshirt" width="2048" height="1365" loading="lazy" decoding="async">
+            </button>
+            <figcaption>Engineering spirit</figcaption>
+          </figure>
+          <figure class="gallery-shot portrait">
+            <button class="gallery-open" type="button" aria-label="Enlarge photo: Campus life">
+            <img src="assets/campus-life.jpg" alt="Ahnaf at a campus event with purple face paint" width="1536" height="2048" loading="lazy" decoding="async">
+            </button>
+            <figcaption>Campus life</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="play">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">A little game break</span>
+        <h2>Want to play a round?</h2>
+        <p>I love games and a friendly challenge. Flip two cards to match the icons.</p>
+      </div>
+      <div class="match-wrap">
+        <div class="match-board" id="matchBoard" aria-label="Engineering memory game cards"></div>
+        <div class="match-hud">
+          <span>Moves: <strong id="matchMoves">0</strong></span>
+          <span class="match-best">Best: <strong id="matchBest">None yet</strong></span>
+          <button class="btn btn-ghost" id="matchReset" type="button">Shuffle again</button>
+          <span class="match-status" id="matchStatus" role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </div>
+  </section></main><dialog class="photo-dialog" id="photoDialog" aria-label="Enlarged campus photo">
+  <button class="photo-close" id="photoClose" type="button" aria-label="Close photo">Close ✕</button>
+  <img id="photoDialogImage" alt="">
+  <p id="photoDialogCaption"></p>
+</dialog>
+<button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" title="Back to top"><span>↑</span></button>
+
+<footer>
+  Ahnaf Hawlader · Toronto, Ontario <button class="secret-button" id="secretButton" type="button" aria-label="Reveal a secret" aria-expanded="false" aria-controls="secretMessage">✦</button>
+  <span class="secret-message" id="secretMessage" hidden>Avram was here! Official little-brother quality control 🏀✨</span>
+</footer>
+
+</body></html>

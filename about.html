@@ -1,0 +1,214 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About | Ahnaf Hawlader</title><meta name="description" content="About, education, skills, and contact.">
+<script>
+document.documentElement.classList.add('js-enabled');
+try {
+  var savedTheme = localStorage.getItem('ahnaf-theme');
+  var allowedThemes = ['sakura', 'cyberpunk', 'western', 'moonlit'];
+  document.documentElement.setAttribute('data-theme', allowedThemes.indexOf(savedTheme) !== -1 ? savedTheme : 'sakura');
+} catch (e) {
+  document.documentElement.setAttribute('data-theme', 'sakura');
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=Nunito:wght@400;500;600;700;800&amp;family=Orbitron:wght@500;600;700&amp;family=Playfair+Display:wght@400;600;700&amp;family=Rye&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"><script src="site.js" defer></script></head><body><header class="nav page-nav">
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="nav-inner"><a class="site-brand" href="index.html">Ahnaf Hawlader</a>
+    <div class="nav-right">
+      <details class="mobile-menu">
+        <summary>Menu</summary>
+        <nav aria-label="Mobile navigation">
+          <a href="about.html#about">About</a><a href="materials.html#materials">Materials</a>
+          <a href="life.html#interests">Interests</a><a href="experience.html#experience">Experience</a>
+          <a href="projects.html#projects">Projects</a><a href="about.html#skills">Skills</a>
+          <a href="about.html#education">Education</a><a href="materials.html#idea-lab">Idea Lab</a>
+          <a href="life.html#play">Play</a><a href="about.html#contact">Contact</a>
+        </nav>
+      </details>
+      <ul class="nav-links">
+        <li><a href="about.html#about">About</a></li>
+        <li><a href="materials.html#materials">Materials</a></li>
+        <li><a href="life.html#interests">Interests</a></li>
+        <li><a href="experience.html#experience">Experience</a></li>
+        <li><a href="projects.html#projects">Projects</a></li>
+        <li><a href="life.html#play">Play</a></li>
+        <li><a href="about.html#contact">Contact</a></li>
+      </ul>
+      <div class="theme-picker" role="group" aria-label="Choose a theme">
+        <button class="swatch" data-theme="sakura" style="--sw-bg:#FFF8FB;--sw1:#FFC2DA;--sw2:#E9B3D3" type="button" aria-label="Sakura theme" title="Sakura">🌸</button>
+        <button class="swatch" data-theme="cyberpunk" style="--sw-bg:#090B1C;--sw1:#31E7F5;--sw2:#FF4CB4" type="button" aria-label="Cyberpunk theme" title="Cyberpunk">⚡</button>
+        <button class="swatch" data-theme="western" style="--sw-bg:#FFF4DE;--sw1:#F7C66F;--sw2:#DB7952" type="button" aria-label="Western Hero theme" title="Western Hero">⭐</button>
+        <button class="swatch" data-theme="moonlit" style="--sw-bg:#21162C;--sw1:#FFC3DF;--sw2:#B798D8" type="button" aria-label="Moonlit Sakura theme" title="Moonlit Sakura">🌙</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">  <section class="hero">
+    <div class="dots" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow-line">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="1.2" opacity="0.5"/></svg>
+            A little bit of everything, based in Toronto
+          </span>
+          <h1>Hi, I'm Ahnaf.<br><em>Curiosity follows me everywhere.</em></h1>
+          <p class="hero-sub">Basketball captain, music lover, Pokémon fan, community builder, and Materials Engineering student. I am curious about people and the materials behind the things we use, from medical devices to energy systems and everyday products.</p>
+          <div class="hero-meta">
+            <span class="pill">🏀 Basketball</span>
+            <span class="pill">🎵 Music</span>
+            <span class="pill">⚡ Pokémon</span>
+            <span class="pill">🔬 Engineering</span>
+          </div>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="about.html#about">Get to know me</a>
+            <a class="btn btn-ghost" href="about.html#contact">Say hello</a>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <div class="blob-bg" aria-hidden="true"></div>
+          <span class="hero-orbit one" aria-hidden="true">⚙️</span>
+          <span class="hero-orbit two" aria-hidden="true">✨</span>
+          <img src="assets/ahnaf-portrait.jpg" alt="Portrait of Ahnaf Hawlader outdoors in a garden">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <figure class="feature-banner">
+    <img src="assets/engineering-banner.jpg" alt="Ahnaf beside an engineering design project poster" width="1400" height="349" decoding="async">
+    <figcaption>Curious wherever I go.</figcaption>
+  </figure>
+
+
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">The person behind the projects</span>
+        <h2>More than one thing</h2>
+      </div>
+      <div class="about-body">
+        <div>
+          <p>I'm Ahnaf. Give me a basketball game, a song that fits the moment, or a big “what if” question, and I can talk for hours. I like the fun of figuring something out, especially with people who see it differently from me.</p>
+          <p>Being part of the Bengali student community, leading teams, and mentoring younger students have taught me that showing up for people matters as much as having a good idea. I want the spaces I'm part of to feel welcoming and full of possibility.</p>
+          <p>Engineering is one way I put that curiosity to work. At the University of Toronto, I study Materials Engineering with a Biomaterials theme and a Bioengineering minor. I am interested in how we design materials, make them reliably, and use resources thoughtfully, whether the result supports health, energy, sport, or everyday life.</p>
+        </div>
+        <div class="about-card">
+          <h3>You'll probably find me...</h3>
+          <ul>
+            <li>Playing basketball or thinking about the next game.</li>
+            <li>Finding a song to share with someone.</li>
+            <li>Building a Pokémon team just for the fun of it.</li>
+            <li>Helping organize something that brings people together.</li>
+            <li>Asking how an idea could help someone in real life.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Education</span>
+        <h2>What I am learning and why</h2>
+        <p>My studies help me connect material structure, processing, properties, and performance across different applications.</p>
+      </div>
+      <div class="edu-grid">
+        <div>
+          <div class="edu-card">
+            <h3>University of Toronto</h3>
+            <div class="edu-when">Bachelor of Applied Science, Engineering · 2024 – 2029</div>
+            <p>I study Materials Engineering with a Biomaterials theme and a Bioengineering minor. Courses in thermodynamics, mechanics, transport, manufacturing, and design give me a foundation for exploring materials across industries. I am preparing for a PEY Co-op placement.</p>
+          </div>
+          <div class="edu-card">
+            <h3>Maxwell Heights Secondary School</h3>
+            <div class="edu-when">OSSD · 2020 – 2024</div>
+            <p>Graduated while serving two years on Student Council executive, including a term as Prime Minister.</p>
+          </div>
+        </div>
+        <div class="edu-card" style="margin-bottom:0;">
+          <h3>Honors and Certifications</h3>
+          <ul class="honor-list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.6 6.2L21 9l-5 4.4L17.4 21 12 17.3 6.6 21 8 13.4 3 9l6.4-0.8L12 2z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg> SOLIDWORKS Additive Manufacturing Associate</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.6 6.2L21 9l-5 4.4L17.4 21 12 17.3 6.6 21 8 13.4 3 9l6.4-0.8L12 2z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg> Platinum Award</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.6 6.2L21 9l-5 4.4L17.4 21 12 17.3 6.6 21 8 13.4 3 9l6.4-0.8L12 2z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg> Spirit of Learning Award</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.6 6.2L21 9l-5 4.4L17.4 21 12 17.3 6.6 21 8 13.4 3 9l6.4-0.8L12 2z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg> The Danielle Andela Award</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.6 6.2L21 9l-5 4.4L17.4 21 12 17.3 6.6 21 8 13.4 3 9l6.4-0.8L12 2z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg> Principal's &amp; Honor Roll (Grades 9–10)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Skills</span>
+        <h2>Things I have learned by doing</h2>
+        <p>I use design, testing, documentation, and teamwork to move ideas forward. These skills can travel across many kinds of materials work.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Engineering Software</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">SOLIDWORKS</span>
+            <span class="skill-pill">ANSYS Mechanical</span>
+            <span class="skill-pill">Tinkercad</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Programming and Methods</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">Google Sheets</span>
+            <span class="skill-pill">3D printing</span>
+            <span class="skill-pill">Experimental &amp; materials testing</span>
+            <span class="skill-pill">Literature research</span>
+            <span class="skill-pill">Technical documentation</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Leadership and Languages</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Program development</span>
+            <span class="skill-pill">Team leadership</span>
+            <span class="skill-pill">Youth mentoring</span>
+            <span class="skill-pill">English: native or bilingual</span>
+            <span class="skill-pill">Bengali: native or bilingual</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section-alt">
+    <div class="wrap">
+      <div class="contact-panel">
+        <div class="dots" aria-hidden="true"></div>
+        <h2>Say hello</h2>
+        <p>Want to talk basketball, trade music, compare Pokémon teams, or build something useful together? I would love to hear from you.</p>
+        <div class="contact-cta">
+          <a class="btn btn-primary" href="mailto:ahnaf.hawlader@mail.utoronto.ca">ahnaf.hawlader@mail.utoronto.ca</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/ahnaf0/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section></main><dialog class="photo-dialog" id="photoDialog" aria-label="Enlarged campus photo">
+  <button class="photo-close" id="photoClose" type="button" aria-label="Close photo">Close ✕</button>
+  <img id="photoDialogImage" alt="">
+  <p id="photoDialogCaption"></p>
+</dialog>
+<button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" title="Back to top"><span>↑</span></button>
+
+<footer>
+  Ahnaf Hawlader · Toronto, Ontario <button class="secret-button" id="secretButton" type="button" aria-label="Reveal a secret" aria-expanded="false" aria-controls="secretMessage">✦</button>
+  <span class="secret-message" id="secretMessage" hidden>Avram was here! Official little-brother quality control 🏀✨</span>
+</footer>
+
+</body></html>

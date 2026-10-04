@@ -1,0 +1,129 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Materials | Ahnaf Hawlader</title><meta name="description" content="Biomaterials, manufacturing, sustainable processing, and materials design.">
+<script>
+document.documentElement.classList.add('js-enabled');
+try {
+  var savedTheme = localStorage.getItem('ahnaf-theme');
+  var allowedThemes = ['sakura', 'cyberpunk', 'western', 'moonlit'];
+  document.documentElement.setAttribute('data-theme', allowedThemes.indexOf(savedTheme) !== -1 ? savedTheme : 'sakura');
+} catch (e) {
+  document.documentElement.setAttribute('data-theme', 'sakura');
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=Nunito:wght@400;500;600;700;800&amp;family=Orbitron:wght@500;600;700&amp;family=Playfair+Display:wght@400;600;700&amp;family=Rye&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"><script src="site.js" defer></script></head><body><header class="nav page-nav">
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="nav-inner"><a class="site-brand" href="index.html">Ahnaf Hawlader</a>
+    <div class="nav-right">
+      <details class="mobile-menu">
+        <summary>Menu</summary>
+        <nav aria-label="Mobile navigation">
+          <a href="about.html#about">About</a><a href="materials.html#materials">Materials</a>
+          <a href="life.html#interests">Interests</a><a href="experience.html#experience">Experience</a>
+          <a href="projects.html#projects">Projects</a><a href="about.html#skills">Skills</a>
+          <a href="about.html#education">Education</a><a href="materials.html#idea-lab">Idea Lab</a>
+          <a href="life.html#play">Play</a><a href="about.html#contact">Contact</a>
+        </nav>
+      </details>
+      <ul class="nav-links">
+        <li><a href="about.html#about">About</a></li>
+        <li><a href="materials.html#materials">Materials</a></li>
+        <li><a href="life.html#interests">Interests</a></li>
+        <li><a href="experience.html#experience">Experience</a></li>
+        <li><a href="projects.html#projects">Projects</a></li>
+        <li><a href="life.html#play">Play</a></li>
+        <li><a href="about.html#contact">Contact</a></li>
+      </ul>
+      <div class="theme-picker" role="group" aria-label="Choose a theme">
+        <button class="swatch" data-theme="sakura" style="--sw-bg:#FFF8FB;--sw1:#FFC2DA;--sw2:#E9B3D3" type="button" aria-label="Sakura theme" title="Sakura">🌸</button>
+        <button class="swatch" data-theme="cyberpunk" style="--sw-bg:#090B1C;--sw1:#31E7F5;--sw2:#FF4CB4" type="button" aria-label="Cyberpunk theme" title="Cyberpunk">⚡</button>
+        <button class="swatch" data-theme="western" style="--sw-bg:#FFF4DE;--sw1:#F7C66F;--sw2:#DB7952" type="button" aria-label="Western Hero theme" title="Western Hero">⭐</button>
+        <button class="swatch" data-theme="moonlit" style="--sw-bg:#21162C;--sw1:#FFC3DF;--sw2:#B798D8" type="button" aria-label="Moonlit Sakura theme" title="Moonlit Sakura">🌙</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">  <section id="materials">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">The work that excites me</span>
+        <h2>Four sides of materials I want to explore</h2>
+        <p>I like following an idea from what a material is made of to how it is produced, how it performs, and who it helps. These four areas keep me curious.</p>
+      </div>
+      <div class="dream-grid">
+        <article class="dream-card">
+          <span class="dream-icon" aria-hidden="true">🦿</span>
+          <h3>Biomaterials</h3>
+          <p>Basketball makes me notice how much movement matters. I am interested in materials that work with the body, especially for medical devices, mobility, and healing.</p>
+        </article>
+        <article class="dream-card">
+          <span class="dream-icon" aria-hidden="true">🏭</span>
+          <h3>Manufacturing with Materials</h3>
+          <p>I enjoy the leap from a sketch to something you can hold and test. Prototyping has made me curious about how material and process choices turn an idea into a consistent, useful product.</p>
+        </article>
+        <article class="dream-card">
+          <span class="dream-icon" aria-hidden="true">🌱</span>
+          <h3>Sustainable Materials Processing</h3>
+          <p>I want to understand how processes use energy and resources, and how better choices can reduce waste while still making materials that perform well.</p>
+        </article>
+        <article class="dream-card">
+          <span class="dream-icon" aria-hidden="true">🔬</span>
+          <h3>Design of Materials, Including Nanomaterials</h3>
+          <p>I love the idea that a small change in structure or surface can change what a material can do. Nanomaterials make me curious about designing properties for applications across health, energy, and beyond.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="idea-lab">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">A peek inside my brain</span>
+        <h2>What if we tried this?</h2>
+        <p>I like imagining how a material could solve a human problem. Pick two ideas and see where they lead.</p>
+      </div>
+      <div class="lab-shell">
+        <div class="lab-controls">
+          <div>
+            <span class="lab-choice-title">1. Choose a challenge</span>
+            <div class="lab-options" role="group" aria-label="Choose a challenge">
+              <button class="lab-option" type="button" data-lab-kind="challenge" data-lab-value="mobility" aria-pressed="true">🦿 Mobility</button>
+              <button class="lab-option" type="button" data-lab-kind="challenge" data-lab-value="healing" aria-pressed="false">💚 Healing</button>
+              <button class="lab-option" type="button" data-lab-kind="challenge" data-lab-value="sport" aria-pressed="false">🏀 Sport</button>
+            </div>
+          </div>
+          <div>
+            <span class="lab-choice-title">2. Choose a material</span>
+            <div class="lab-options" role="group" aria-label="Choose a material">
+              <button class="lab-option" type="button" data-lab-kind="material" data-lab-value="hydrogel" aria-pressed="true">💧 Hydrogel</button>
+              <button class="lab-option" type="button" data-lab-kind="material" data-lab-value="composite" aria-pressed="false">🧩 Composite</button>
+              <button class="lab-option" type="button" data-lab-kind="material" data-lab-value="fabric" aria-pressed="false">🧵 Smart fabric</button>
+            </div>
+          </div>
+          <div><button class="sparkle-button" id="labSurprise" type="button">🎲 Surprise me</button></div>
+        </div>
+        <div class="lab-result" id="labResult" role="status" aria-live="polite" aria-atomic="true">
+          <span class="lab-label" id="labCombination">Mobility + hydrogel</span>
+          <h3 id="labTitle">Comfort-first prosthetic liner</h3>
+          <p id="labDescription">Imagine a soft liner that helps cushion pressure points, making a prosthetic more comfortable to wear.</p>
+        </div>
+      </div>
+      <p class="lab-footnote">These are playful concept sketches, not finished devices.</p>
+    </div>
+  </section></main><dialog class="photo-dialog" id="photoDialog" aria-label="Enlarged campus photo">
+  <button class="photo-close" id="photoClose" type="button" aria-label="Close photo">Close ✕</button>
+  <img id="photoDialogImage" alt="">
+  <p id="photoDialogCaption"></p>
+</dialog>
+<button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" title="Back to top"><span>↑</span></button>
+
+<footer>
+  Ahnaf Hawlader · Toronto, Ontario <button class="secret-button" id="secretButton" type="button" aria-label="Reveal a secret" aria-expanded="false" aria-controls="secretMessage">✦</button>
+  <span class="secret-message" id="secretMessage" hidden>Avram was here! Official little-brother quality control 🏀✨</span>
+</footer>
+
+</body></html>
