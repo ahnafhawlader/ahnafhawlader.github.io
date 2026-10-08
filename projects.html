@@ -1005,6 +1005,20 @@ header.nav.page-nav .nav-inner { display:flex; align-items:center; gap:16px; max
  .home-center h1 { font-size:2.35rem; }
  .home-links a { font-size:1.1rem; }
 }
+
+/* Extra project stories keep the original theme, with a quieter editorial layout. */
+.project-more { margin-top: clamp(48px, 8vw, 88px); }
+.project-more-label { color: var(--pink-ink); font-size: .83rem; letter-spacing: .09em; text-transform: uppercase; font-weight: 700; margin: 0 0 12px; }
+.project-chapter { padding-top: 32px; margin-top: 32px; border-top: 1px solid var(--line); }
+.project-chapter-head { margin-bottom: 22px; max-width: 650px; }
+.project-chapter-head h3 { color: var(--cream); font-size: clamp(1.35rem, 2.5vw, 1.8rem); margin: 0 0 7px; }
+.project-chapter-head p { color: var(--cream-dim); margin: 0; }
+.simple-page .project-grid { grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 760px) { .simple-page .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.project-story { min-width: 0; }
+.project-story h4 { color: var(--cream); font-size: 1.16rem; line-height: 1.35; margin: 0; }
+.project-story .project-symbol { font-size: 1.3rem; font-weight: 700; }
+.project-story .tag-row { margin-top: auto; padding-top: 8px; }
 </style></head><body class="simple-page"><header class="nav page-nav"><div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div><div class="nav-inner">
 <a class="site-brand" href="index.html">Ahnaf Hawlader</a><div class="nav-right"><details class="mobile-menu"><summary>Menu</summary><nav aria-label="Site pages"><a href="about.html">About</a><a href="materials.html">Materials</a><a href="interests.html">Interests</a><a href="experience.html">Experience</a><a href="projects.html">Projects</a><a href="skills.html">Skills</a><a href="education.html">Education</a><a href="photos.html">Photos</a><a href="idea-lab.html">Idea Lab</a><a href="play.html">Play</a><a href="contact.html">Contact</a></nav></details><div class="theme-picker" role="group" aria-label="Choose a theme">
 <button class="swatch" data-theme="sakura" style="--sw-bg:#FFF8FB;--sw1:#FFC2DA;--sw2:#E9B3D3" type="button" aria-label="Sakura theme" title="Sakura">🌸</button>
@@ -1060,6 +1074,108 @@ header.nav.page-nav .nav-inner { display:flex; align-items:center; gap:16px; max
           </div>
         </div>
 
+      </div>
+      <div class="project-more">
+        <p class="project-more-label">More things I have made and explored</p>
+<section class="project-chapter" aria-label="Design it, then test it">
+  <div class="project-chapter-head"><h3>Design it, then test it</h3><p>I love seeing how a small change in a material or shape can make a big difference.</p></div>
+  <div class="project-list project-grid">
+    <article class="project-card project-story">
+      <div class="project-icon project-symbol" aria-hidden="true">✦</div>
+      <h4>A Bracket That Carries Its Weight</h4>
+      <span class="project-meta">Product design · Simulation</span>
+      <p>With a team, I designed a shelf bracket and put it through a virtual 10 kg load test. We compared steel, aluminum, and plastic, then found that a light aluminum design with a rounded corner kept stress and bending low. Tiny design details matter.</p>
+      <div class="tag-row"><span class="tag">SOLIDWORKS</span><span class="tag">ANSYS</span><span class="tag">Design iteration</span></div>
+    </article>
+    <article class="project-card project-story">
+      <div class="project-icon project-symbol" aria-hidden="true">✦</div>
+      <h4>Making Aluminum Stronger</h4>
+      <span class="project-meta">Materials design · Research</span>
+      <p>What makes a lightweight metal strong enough for demanding uses? I mapped how heat treatment changes an aluminum-copper alloy as tiny particles form inside it. Following the connection between temperature, time, and strength made materials design feel like solving a puzzle.</p>
+      <div class="tag-row"><span class="tag">Heat treatment</span><span class="tag">Aluminum alloys</span><span class="tag">Microstructure</span></div>
+    </article>
+  </div>
+</section>
+<section class="project-chapter" aria-label="A closer look at materials">
+  <div class="project-chapter-head"><h3>A closer look at materials</h3><p>These projects let me play detective with structures that are too small to see by eye.</p></div>
+  <div class="project-list project-grid">
+    <article class="project-card project-story">
+      <div class="project-icon project-symbol" aria-hidden="true">◈</div>
+      <h4>The Crystal Identity Puzzle</h4>
+      <span class="project-meta">Materials analysis</span>
+      <p>I used X-ray diffraction patterns to identify mystery samples of iron, nickel, and cobalt, then examined the crystal structure of a nickel-cobalt alloy. It is a little like reading a material’s fingerprint, with peaks instead of prints.</p>
+      <div class="tag-row"><span class="tag">XRD</span><span class="tag">Crystal structures</span></div>
+    </article>
+    <article class="project-card project-story">
+      <div class="project-icon project-symbol" aria-hidden="true">◈</div>
+      <h4>What Is Really on a Silicon Surface?</h4>
+      <span class="project-meta">Surface analysis</span>
+      <p>A polished silicon wafer looks clean, but its surface tells another story. I used X-ray photoelectron data to find silicon, oxygen, and carbon, revealing a natural oxide layer and surface contamination. That hidden layer can change how a material performs.</p>
+      <div class="tag-row"><span class="tag">XPS</span><span class="tag">Surface chemistry</span></div>
+    </article>
+    <article class="project-card project-story">
+      <div class="project-icon project-symbol" aria-hidden="true">◈</div>
+      <h4>Textures in the Tiny World</h4>
+      <span class="project-meta">Microscopy</span>
+      <p>I explored electron microscope images of a nickel-polymer coating, copper, and a nickel-cobalt alloy. Pores, copper grains, and fine alloy texture came into view, showing how much useful information can hide in a surface.</p>
+      <div class="tag-row"><span class="tag">SEM</span><span class="tag">Microstructure</span></div>
+    </article>
+    <article class="project-card project-story">
+      <div class="project-icon project-symbol" aria-hidden="true">◈</div>
+      <h4>How Heat Changes an Alloy</h4>
+      <span class="project-meta">Nanoscale analysis</span>
+      <p>I compared microscope images and diffraction patterns from nickel-cobalt samples exposed to different temperatures. The hotter sample had larger grains, a clear reminder that processing can reshape a material from the inside out.</p>
+      <div class="tag-row"><span class="tag">TEM</span><span class="tag">Electron diffraction</span><span class="tag">NiCo</span></div>
+    </article>
+  </div>
+</section>
+<section class="project-chapter" aria-label="Make it, mix it, figure it out">
+  <div class="project-chapter-head"><h3>Make it, mix it, figure it out</h3><p>Hands-on chemistry makes everyday materials feel surprisingly clever.</p></div>
+  <div class="project-list project-grid">
+    <article class="project-card project-story">
+      <div class="project-icon project-symbol" aria-hidden="true">✳</div>
+      <h4>Soap from Olive Oil</h4>
+      <span class="project-meta">Sustainable materials · Making</span>
+      <p>I turned olive oil into soap, then tested its behavior with water, acid, and oil. Seeing the product help form an emulsion made the chemistry of cleaning feel real, from its molecular structure to something you can hold.</p>
+      <div class="tag-row"><span class="tag">Saponification</span><span class="tag">Emulsions</span></div>
+    </article>
+    <article class="project-card project-story">
+      <div class="project-icon project-symbol" aria-hidden="true">✳</div>
+      <h4>The Aspirin Experiment</h4>
+      <span class="project-meta">Biomaterials · Making</span>
+      <p>I made aspirin from salicylic acid, collected the crystals, and checked what the melting point and a color test said about purity. The project connected a familiar medicine to the careful steps behind making and evaluating a material.</p>
+      <div class="tag-row"><span class="tag">Synthesis</span><span class="tag">Purity testing</span></div>
+    </article>
+    <article class="project-card project-story">
+      <div class="project-icon project-symbol" aria-hidden="true">✳</div>
+      <h4>Pulling a Polymer into a Thread</h4>
+      <span class="project-meta">Polymers · Making</span>
+      <p>I formed nylon where two liquid layers met and pulled the new material into a thread. Watching a polymer take shape in real time was a memorable way to understand how long molecular chains are built.</p>
+      <div class="tag-row"><span class="tag">Nylon 6-10</span><span class="tag">Polymerization</span></div>
+    </article>
+    <article class="project-card project-story">
+      <div class="project-icon project-symbol" aria-hidden="true">✳</div>
+      <h4>The Mystery Acid</h4>
+      <span class="project-meta">Chemical analysis</span>
+      <p>I used a color-changing titration to work out the molecular weight of an unknown acid. The most interesting part was seeing how a single extra drop can shift the result, and why careful measurements matter.</p>
+      <div class="tag-row"><span class="tag">Titration</span><span class="tag">Data analysis</span></div>
+    </article>
+    <article class="project-card project-story">
+      <div class="project-icon project-symbol" aria-hidden="true">✳</div>
+      <h4>How Much Iron Is in This Sample?</h4>
+      <span class="project-meta">Chemical analysis</span>
+      <p>I used a redox titration to estimate the amount of dissolved iron in a sample. A visible endpoint turned an invisible chemical change into a measurable answer, with plenty of room to think about precision.</p>
+      <div class="tag-row"><span class="tag">Redox chemistry</span><span class="tag">Titration</span></div>
+    </article>
+    <article class="project-card project-story">
+      <div class="project-icon project-symbol" aria-hidden="true">✳</div>
+      <h4>What Is Hiding in This Solution?</h4>
+      <span class="project-meta">Chemical detective work</span>
+      <p>I ran a sequence of reactions to identify the ions in an unknown solution. Changes in color and the formation of solids helped point to iodide, phosphate, and nitrate. It felt like solving a mystery one test at a time.</p>
+      <div class="tag-row"><span class="tag">Qualitative analysis</span><span class="tag">Reaction testing</span></div>
+    </article>
+  </div>
+</section>
       </div>
     </div>
   </section></main><nav class="page-links" aria-label="Other pages"><a href="about.html">About</a><a href="materials.html">Materials</a><a href="interests.html">Interests</a><a href="experience.html">Experience</a><a href="skills.html">Skills</a><a href="education.html">Education</a><a href="photos.html">Photos</a><a href="idea-lab.html">Idea Lab</a><a href="play.html">Play</a><a href="contact.html">Contact</a></nav><dialog class="photo-dialog" id="photoDialog" aria-label="Enlarged campus photo">
