@@ -3,11 +3,11 @@
 <script>
 document.documentElement.classList.add('js-enabled');
 try {
-  var savedTheme = localStorage.getItem('ahnaf-theme');
-  var allowedThemes = ['sakura', 'cyberpunk', 'western', 'moonlit'];
-  document.documentElement.setAttribute('data-theme', allowedThemes.indexOf(savedTheme) !== -1 ? savedTheme : 'sakura');
+  var savedTheme = localStorage.getItem('ahnaf-mode');
+  var preferredMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', savedTheme === 'light' || savedTheme === 'dark' ? savedTheme : preferredMode);
 } catch (e) {
-  document.documentElement.setAttribute('data-theme', 'sakura');
+  document.documentElement.setAttribute('data-theme', 'light');
 }
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,64 +28,6 @@ try {
     --display-spacing: 0.005em;
     --radius-blob: 62% 38% 37% 63% / 58% 41% 59% 42%;
     box-sizing: border-box;
-  }
-
-  /* Four selectable palettes, each with its own matching font. */
-  :root[data-theme="sakura"] {
-    --bg: #FFF8FB; --bg-alt: #FFEAF2; --bg-panel: #FFFFFF;
-    --cream: #352437; --cream-dim: #654B60;
-    --marigold: #FFC2DA; --coral: #F39ABC; --teal: #E9B3D3;
-    --pink-ink: #982F65; --blue-ink: #694470;
-    --line: rgba(53,36,55,.16); --dot-color: rgba(243,154,188,.23);
-    --nav-bg: rgba(255,248,251,.94); --pill-bg: rgba(53,36,55,.055);
-    --subtle-fill: rgba(53,36,55,.05); --btn-ink: #3A2434;
-    --btn-shadow: rgba(243,154,188,.32); --icon-bg: rgba(233,179,211,.26);
-    --tag-bg: rgba(255,194,218,.32);
-    --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-display: 'Playfair Display', Georgia, serif; --display-weight: 600;
-    --hero-glow: rgba(255,154,193,.31);
-  }
-  :root[data-theme="cyberpunk"] {
-    --bg: #090B1C; --bg-alt: #121434; --bg-panel: #1A1E42;
-    --cream: #F4F8FF; --cream-dim: #BCC6E5;
-    --marigold: #F8ED62; --coral: #FF4CB4; --teal: #31E7F5;
-    --pink-ink: #FF9AD8; --blue-ink: #85F5FF;
-    --line: rgba(244,248,255,.19); --dot-color: rgba(49,231,245,.23);
-    --nav-bg: rgba(9,11,28,.94); --pill-bg: rgba(244,248,255,.08);
-    --subtle-fill: rgba(244,248,255,.07); --btn-ink: #171725;
-    --btn-shadow: rgba(49,231,245,.32); --icon-bg: rgba(49,231,245,.17);
-    --tag-bg: rgba(255,76,180,.18);
-    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-display: 'Orbitron', 'Inter', sans-serif; --display-weight: 600;
-    --hero-glow: rgba(49,231,245,.19);
-  }
-  :root[data-theme="western"] {
-    --bg: #FFF4DE; --bg-alt: #F9E7C6; --bg-panel: #FFFCF4;
-    --cream: #30251D; --cream-dim: #5B4B3F;
-    --marigold: #F7C66F; --coral: #DB7952; --teal: #82B6B2;
-    --pink-ink: #8B3F2A; --blue-ink: #2B686B;
-    --line: rgba(48,37,29,.19); --dot-color: rgba(219,121,82,.18);
-    --nav-bg: rgba(255,244,222,.94); --pill-bg: rgba(48,37,29,.06);
-    --subtle-fill: rgba(48,37,29,.055); --btn-ink: #332518;
-    --btn-shadow: rgba(219,121,82,.3); --icon-bg: rgba(130,182,178,.23);
-    --tag-bg: rgba(247,198,111,.32);
-    --font-body: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-display: 'Rye', Georgia, serif; --display-weight: 400;
-    --hero-glow: rgba(247,198,111,.32);
-  }
-  :root[data-theme="moonlit"] {
-    --bg: #21162C; --bg-alt: #2E203C; --bg-panel: #392747;
-    --cream: #FFF8FC; --cream-dim: #DBC9E3;
-    --marigold: #FFC3DF; --coral: #E795C2; --teal: #B798D8;
-    --pink-ink: #FFD1EA; --blue-ink: #D8C2FF;
-    --line: rgba(255,248,252,.19); --dot-color: rgba(231,149,194,.2);
-    --nav-bg: rgba(33,22,44,.94); --pill-bg: rgba(255,248,252,.08);
-    --subtle-fill: rgba(255,248,252,.07); --btn-ink: #39233A;
-    --btn-shadow: rgba(255,195,223,.26); --icon-bg: rgba(183,152,216,.2);
-    --tag-bg: rgba(231,149,194,.18);
-    --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-display: 'Playfair Display', Georgia, serif; --display-weight: 600;
-    --hero-glow: rgba(231,149,194,.18);
   }
 
   body { transition: background 0.25s ease, color 0.25s ease; }
@@ -1005,12 +947,8 @@ header.nav.page-nav .nav-inner { display:flex; align-items:center; gap:16px; max
  .home-center h1 { font-size:2.35rem; }
  .home-links a { font-size:1.1rem; }
 }
-</style></head><body class="simple-page"><header class="nav page-nav"><div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div><div class="nav-inner">
-<a class="site-brand" href="index.html">Ahnaf Hawlader</a><div class="nav-right"><details class="mobile-menu"><summary>Menu</summary><nav aria-label="Site pages"><a href="about.html">About</a><a href="materials.html">Materials</a><a href="interests.html">Interests</a><a href="experience.html">Experience</a><a href="projects.html">Projects</a><a href="skills.html">Skills</a><a href="education.html">Education</a><a href="photos.html">Photos</a><a href="idea-lab.html">Idea Lab</a><a href="play.html">Play</a><a href="contact.html">Contact</a></nav></details><div class="theme-picker" role="group" aria-label="Choose a theme">
-<button class="swatch" data-theme="sakura" style="--sw-bg:#FFF8FB;--sw1:#FFC2DA;--sw2:#E9B3D3" type="button" aria-label="Sakura theme" title="Sakura">🌸</button>
-<button class="swatch" data-theme="cyberpunk" style="--sw-bg:#090B1C;--sw1:#31E7F5;--sw2:#FF4CB4" type="button" aria-label="Cyberpunk theme" title="Cyberpunk">⚡</button>
-<button class="swatch" data-theme="western" style="--sw-bg:#FFF4DE;--sw1:#F7C66F;--sw2:#DB7952" type="button" aria-label="Western Hero theme" title="Western Hero">⭐</button>
-<button class="swatch" data-theme="moonlit" style="--sw-bg:#21162C;--sw1:#FFC3DF;--sw2:#B798D8" type="button" aria-label="Moonlit Sakura theme" title="Moonlit Sakura">🌙</button></div></div></div></header><main id="top"><p class="page-intro"><a href="index.html">Home</a> / Idea Lab</p>  <section id="idea-lab">
+</style><link rel="stylesheet" href="minimal.css"></head><body class="simple-page"><header class="nav page-nav"><div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div><div class="nav-inner">
+<a class="site-brand" href="index.html">Ahnaf Hawlader</a><div class="nav-right"><details class="mobile-menu"><summary>Menu</summary><nav aria-label="Site pages"><a href="about.html">About</a><a href="materials.html">Materials</a><a href="interests.html">Interests</a><a href="experience.html">Experience</a><a href="projects.html">Projects</a><a href="skills.html">Skills</a><a href="education.html">Education</a><a href="photos.html">Photos</a><a href="idea-lab.html">Idea Lab</a><a href="play.html">Play</a><a href="contact.html">Contact</a></nav></details><div class="theme-picker"><button class="mode-toggle" type="button" aria-label="Switch colour mode" aria-pressed="false"><span class="mode-icon" aria-hidden="true">◐</span><span class="mode-word">Dark</span></button></div></div></div></header><main id="top"><p class="page-intro"><a href="index.html">Home</a> / Idea Lab</p>  <section id="idea-lab">
     <div class="wrap">
       <div class="section-head">
         <span class="kicker">A peek inside my brain</span>
@@ -1072,47 +1010,30 @@ header.nav.page-nav .nav-inner { display:flex; align-items:center; gap:16px; max
     });
   }
   var root = document.documentElement;
-  var THEMES = ['sakura', 'cyberpunk', 'western', 'moonlit'];
-
-  function getStored() {
-    try { return localStorage.getItem('ahnaf-theme'); } catch (e) { return null; }
-  }
-  function setStored(value) {
-    try { localStorage.setItem('ahnaf-theme', value); } catch (e) { /* no-op */ }
-  }
-  function currentTheme() {
-    var stored = getStored();
-    return stored && THEMES.indexOf(stored) !== -1 ? stored : 'sakura';
-  }
-  function markActive(theme) {
-    var swatches = document.querySelectorAll('.swatch');
-    swatches.forEach(function (s) {
-      var active = s.getAttribute('data-theme') === theme;
-      s.classList.toggle('active', active);
-      s.setAttribute('aria-pressed', String(active));
-    });
-  }
-  var stored = getStored();
-  if (stored && THEMES.indexOf(stored) !== -1) root.setAttribute('data-theme', stored);
-
   window.addEventListener('DOMContentLoaded', function () {
-    markActive(currentTheme());
     var mobileMenu = document.querySelector('.mobile-menu');
     if (mobileMenu) mobileMenu.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () { mobileMenu.open = false; });
     });
-    document.querySelectorAll('.swatch').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var theme = btn.getAttribute('data-theme');
-        root.setAttribute('data-theme', theme);
-        setStored(theme);
-        markActive(theme);
-        var hero = document.querySelector('.hero');
-        if (hero) {
-          hero.classList.remove('theme-swap');
-          void hero.offsetWidth;
-          hero.classList.add('theme-swap');
-        }
+    function updateModeButton() {
+      var dark = root.getAttribute('data-theme') === 'dark';
+      document.querySelectorAll('.mode-toggle').forEach(function (button) {
+        button.setAttribute('aria-pressed', String(dark));
+        button.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+        button.setAttribute('title', dark ? 'Light mode' : 'Dark mode');
+        var icon = button.querySelector('.mode-icon');
+        var word = button.querySelector('.mode-word');
+        if (icon) icon.textContent = dark ? '☀' : '☾';
+        if (word) word.textContent = dark ? 'Light' : 'Dark';
+      });
+    }
+    updateModeButton();
+    document.querySelectorAll('.mode-toggle').forEach(function (button) {
+      button.addEventListener('click', function () {
+        var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem('ahnaf-mode', next); } catch (e) { /* local preferences unavailable */ }
+        updateModeButton();
       });
     });
     var progress = document.getElementById('scrollProgress');
